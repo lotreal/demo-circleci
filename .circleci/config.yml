@@ -21,8 +21,4 @@ jobs:
 workflows:
   build-and-deploy-test:
     jobs:
-      - request-testing:
-          type: approval
-      - build-and-test:
-          requires:
-            - request-testing
+      - build-and-test
